@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["x","console","log"],"mappings":";AAAA,IAAMA,EAAI,GAEVC,QAAQC,IAAIF","file":"src.377856a7.map","sourceRoot":"../src","sourcesContent":["const x = 10;\n\nconsole.log(x);"]}
