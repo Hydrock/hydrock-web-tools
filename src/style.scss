@@ -67,3 +67,13 @@ nav {
 button {
     padding: 10px 20px;
 }
+
+// DecodeBase64
+
+.DecodeBase64 {
+    &__textarea {
+        width: 500px;
+        height: 200px;
+        border: 1px solid black;
+    }
+}

@@ -13,6 +13,9 @@ export default class Navigation extends React.Component {
                         <Link to="/diff">Diff</Link>
                     </li>
                     <li>
+                        <Link to="/base64decode">Base64 Decode</Link>
+                    </li>
+                    <li>
                         <Link to="/about">О нас</Link>
                     </li>
                 </ul>

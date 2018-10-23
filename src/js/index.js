@@ -7,6 +7,7 @@ import Home from './home.js';
 import About from './about.js';
 import Navigation from './nav.js';
 import Diff from './helpers/diff.js';
+import DecodeBase64 from './helpers/base64decode.js';
 
 class App extends React.Component {
     render () {
@@ -17,6 +18,7 @@ class App extends React.Component {
                     <Route exact path="/" component={Home} />
                     <Route exact path="/about" component={About} />
                     <Route exact path="/diff" component={Diff} />
+                    <Route exact path="/base64decode" component={DecodeBase64} />
                 </div>
             </HashRouter>
         )
