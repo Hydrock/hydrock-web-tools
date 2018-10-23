@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node bundler.js",
-    "parcel:build": "parcel build src/index.html --target browser --public-url .. --out-dir docs",
-    "parcel:watch": "parcel watch src/index.html --target browser --public-url .. --out-dir docs"
+    "parcel:build": "parcel build src/index.html --target browser --public-url . --out-dir docs",
+    "parcel:watch": "parcel watch src/index.html --target browser --public-url . --out-dir docs"
   },
   "repository": {
     "type": "git",
