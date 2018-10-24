@@ -1,10 +1,23 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
+import Loadable from 'react-loadable';
+
+function Loading() {
+    return <span>...</span>;
+}
+
+const LoadableComponentLogo = Loadable({
+    loader: () => import('./logo.js'),
+    loading: Loading,
+});
+
+
 export default class Navigation extends React.Component {
     render () {
         return (
             <nav>
+                <LoadableComponentLogo/>
                 <ul>
                     <li>
                         <Link to="/">Главная</Link>

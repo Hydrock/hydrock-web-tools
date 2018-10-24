@@ -38,7 +38,7 @@ export default class DecodeBase64 extends React.Component {
                     <p>
                         Результат
                     </p>
-                    <textarea ref={this.myRef_2} className="DecodeBase64__textarea" readonly={true} />
+                    <textarea ref={this.myRef_2} className="DecodeBase64__textarea" readOnly={true} />
                 </div>
                 <div>
                     <button onClick={this.decodeData}>Decode Base 64 String</button>
