@@ -4,9 +4,14 @@ export default class About extends React.Component {
     render () {
         return (
             <div>
-                <p>
-                    Чтооооооооооо? 😳
-                </p>
+                <h4>
+                    О нас, так еще пишут? 😳
+                </h4>
+                <div className="row">
+                    <div className="twelve columns centered-content">
+                        <img src="https://media.giphy.com/media/l2YWwvuPQYndJTxGo/giphy.gif"/>
+                    </div>
+                </div>
             </div>
         )
     }

@@ -25,27 +25,49 @@ export default class DecodeBase64 extends React.Component {
     render () {
         return (
             <div className="DecodeBase64">
-                <p>
+                <h4>
                     DecodeBase64
-                </p>
+                </h4>
                 <div>
                     <p>
-                        Вставьте исходные данные (base64 строку для декодирования, или строку для кодирования в base64)
+                        Вставьте исходные данные (base64 строку для <strong>декодирования</strong>, или строку для <strong>кодирования в base64</strong>)
                     </p>
-                    <textarea ref={this.myRef_1} className="DecodeBase64__textarea"/>
+                </div>
+                <div className="row">
+                    <div className="one-half column">
+                        <label>Иходная строка</label>
+                        <textarea
+                            ref={this.myRef_1}
+                            className="DecodeBase64__textarea"
+                            //defaultValue='e3Rlc3RPYmplY3Q6ICd0ZXN0VmFsdWUnfQ=='
+                            placeholder='...'
+                        />
+                    </div>
+                    <div className="one-half column">
+                        <label>Результат</label>
+                        <textarea
+                            ref={this.myRef_2}
+                            className="DecodeBase64__textarea"
+                            readOnly={true}
+                            //defaultValue={"{testObject: 'testValue'}"}
+                            placeholder='...'
+                        />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="one-half column">
+                        <button onClick={this.decodeData}>Decode Base 64 String</button>
+                    </div>
+                    <div className="one-half column">
+                        <button onClick={this.encodeData}>Encode Base 64 String</button>
+                    </div>
                 </div>
                 <div>
-                    <p>
-                        Результат
-                    </p>
-                    <textarea ref={this.myRef_2} className="DecodeBase64__textarea" readOnly={true} />
-                </div>
-                <div>
-                    <button onClick={this.decodeData}>Decode Base 64 String</button>
+                    
                     {/* <input type="checkbox"/><label>Auto Update</label> */}
                 <div>
                 </div>
-                    <button onClick={this.encodeData}>Encode Base 64 String</button>
+                    
                     {/* <input type="checkbox"/><label>Auto Update</label> */}
                 </div>
             </div>
