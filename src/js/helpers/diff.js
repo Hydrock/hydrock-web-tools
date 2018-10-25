@@ -53,12 +53,18 @@ export default class Diff extends React.Component {
     render () {
         return (
             <section className="diff">
-                <p>
+                <h4>
                     Генирируем разницу в версиях поставки (для работы)
-                </p>
-                <div className="diff__container">
-                    <textarea ref={this.myRef_1}/>
-                    <div className="diff__result" ref={this.myRef_2}/>
+                </h4>
+                <div className="diff__container / row">
+                    <div className="one-half column">
+                        <label>Вставь версии из Jira</label>
+                        <textarea className="diff__textarea" ref={this.myRef_1}/>
+                    </div>
+                    <div className="one-half column">
+                        <label>Результат</label>
+                        <div className="diff__result" ref={this.myRef_2}/>
+                    </div>
                 </div>
                 <div>
                     <button onClick={this.parseData}>Показать различия версий</button>

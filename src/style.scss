@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic');
 
 html, body {
+    //font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -52,20 +53,24 @@ nav {
         }
     }
 
+    &__textarea {
+        width: 100%;
+        resize: none;
+        height: 300px;
+    }
+
     &__result {
         flex: 1;
         border: 1px solid black;
         padding: 20px;
         box-sizing: border-box;
+        height: 300px;
+        overflow: auto;
     }
 }
 
 * {
     box-sizing: border-box;
-}
-
-button {
-    padding: 10px 20px;
 }
 
 // DecodeBase64

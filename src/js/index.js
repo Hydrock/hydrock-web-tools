@@ -15,10 +15,12 @@ class App extends React.Component {
             <HashRouter>
                 <div>
                     <Navigation/>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/about" component={About} />
-                    <Route exact path="/diff" component={Diff} />
-                    <Route exact path="/base64decode" component={DecodeBase64} />
+                    <div className="container">
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/diff" component={Diff} />
+                        <Route exact path="/base64decode" component={DecodeBase64} />
+                    </div>
                 </div>
             </HashRouter>
         )
