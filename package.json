@@ -9,7 +9,8 @@
     "parcel:watch": "parcel watch src/index.html --target browser --public-url . --out-dir docs",
     "release-patch": "npm version patch -m 'chore(*): patch version'",
     "release-minor": "npm version minor -m 'chore(*): minor version'",
-    "release-major": "npm version major -m 'chore(*): major version'"
+    "release-major": "npm version major -m 'chore(*): major version'",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "repository": {
     "type": "git",
