@@ -1,0 +1,13 @@
+{
+	"app.about.title": "О нас? так еще пишут? {icon}",
+	"app.diff.title": "Генирируем разницу в версиях поставки (для работы)",
+	"app.diff.value_1": "Вставь версии из Jira",
+	"app.diff.value_2": "Результат",
+	"app.diff.value_3": "Показать различия версий",
+	"app.navigation.link.about": "О нас",
+	"app.navigation.link.main": "Главная",
+	"app.page.base64.value_1": "Вставьте исходные данные (base64 строку для декодирования, или строку для кодирования в base64)",
+	"app.page.base64.value_2": "Иходная строка",
+	"app.page.base64.value_3": "Результат",
+	"app.title": "Этот ресур содержит несколько полезных инструментов для работы. {icon}"
+}

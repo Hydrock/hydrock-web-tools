@@ -1,0 +1,13 @@
+{
+	"app.about.title": "About Us? {icon}",
+	"app.diff.title": "We generate the difference in delivery versions (for work)",
+	"app.diff.value_1": "Insert version text from Jira",
+	"app.diff.value_2": "Result",
+	"app.diff.value_3": "Show different versions",
+	"app.navigation.link.about": "About Us",
+	"app.navigation.link.main": "Main",
+	"app.page.base64.value_1": "Insert the original data (base64 string to decode, or string to encode in base64)",
+	"app.page.base64.value_2": "Initial line",
+	"app.page.base64.value_3": "Result",
+	"app.title": "This resource contains several useful tools for working. {icon}"
+}
