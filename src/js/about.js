@@ -9,7 +9,7 @@ export default class About extends React.Component {
                 </h4>
                 <div className="row">
                     <div className="twelve columns centered-content">
-                        <img src="https://media.giphy.com/media/l2YWwvuPQYndJTxGo/giphy.gif"/>
+                        <img className="main-img" src="https://media.giphy.com/media/l2YWwvuPQYndJTxGo/giphy.gif"/>
                     </div>
                 </div>
             </div>

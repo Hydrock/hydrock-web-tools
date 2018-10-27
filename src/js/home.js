@@ -9,7 +9,7 @@ export default class Home extends React.Component {
                 </h4>
                 <div className="row">
                     <div className="twelve columns centered-content">
-                        <img src="https://media.giphy.com/media/3o7aTskHEUdgCQAXde/giphy.gif"/>
+                        <img className="main-img" src="https://media.giphy.com/media/3o7aTskHEUdgCQAXde/giphy.gif"/>
                     </div>
                 </div>
             </section>

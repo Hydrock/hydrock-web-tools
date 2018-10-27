@@ -19,7 +19,7 @@ class App extends React.Component {
                         <Route exact path="/" component={Home} />
                         <Route exact path="/about" component={About} />
                         <Route exact path="/diff" component={Diff} />
-                        <Route exact path="/base64decode" component={DecodeBase64} />
+                        <Route exact path="/base64" component={DecodeBase64} />
                     </div>
                 </div>
             </HashRouter>

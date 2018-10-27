@@ -26,7 +26,7 @@ export default class DecodeBase64 extends React.Component {
         return (
             <div className="DecodeBase64">
                 <h4>
-                    DecodeBase64
+                    Decode / Encode Base64 String
                 </h4>
                 <div>
                     <p>
