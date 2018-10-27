@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 export default class DecodeBase64 extends React.Component {
     constructor() {
@@ -30,21 +31,36 @@ export default class DecodeBase64 extends React.Component {
                 </h4>
                 <div>
                     <p>
-                        Вставьте исходные данные (base64 строку для <strong>декодирования</strong>, или строку для <strong>кодирования в base64</strong>)
+                        <FormattedMessage
+                            id="app.page.base64.value_1"
+                            defaultMessage="Вставьте исходные данные"
+                            description=""
+                        />
                     </p>
                 </div>
                 <div className="row">
                     <div className="one-half column">
-                        <label>Иходная строка</label>
+                        <label>
+                            <FormattedMessage
+                                id="app.page.base64.value_2"
+                                defaultMessage="Иходная строка"
+                                description=""
+                            />
+                        </label>
                         <textarea
                             ref={this.myRef_1}
                             className="DecodeBase64__textarea"
-                            //defaultValue='e3Rlc3RPYmplY3Q6ICd0ZXN0VmFsdWUnfQ=='
                             placeholder='...'
                         />
                     </div>
                     <div className="one-half column">
-                        <label>Результат</label>
+                        <label>
+                            <FormattedMessage
+                                id="app.page.base64.value_3"
+                                defaultMessage="Результат"
+                                description=""
+                            />
+                        </label>
                         <textarea
                             ref={this.myRef_2}
                             className="DecodeBase64__textarea"
@@ -61,14 +77,6 @@ export default class DecodeBase64 extends React.Component {
                     <div className="one-half column">
                         <button onClick={this.encodeData}>Encode Base 64 String</button>
                     </div>
-                </div>
-                <div>
-                    
-                    {/* <input type="checkbox"/><label>Auto Update</label> */}
-                <div>
-                </div>
-                    
-                    {/* <input type="checkbox"/><label>Auto Update</label> */}
                 </div>
             </div>
         )

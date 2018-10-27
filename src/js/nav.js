@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-
+import { FormattedMessage } from 'react-intl';
 import Loadable from 'react-loadable';
 
 function Loading() {
@@ -20,7 +20,13 @@ export default class Navigation extends React.Component {
                 <LoadableComponentLogo/>
                 <ul>
                     <li>
-                        <Link to="/">Главная</Link>
+                        <Link to="/">
+                            <FormattedMessage
+                                id="app.navigation.link.main"
+                                defaultMessage="Главная"
+                                description="Главная"
+                            />
+                        </Link>
                     </li>
                     <li>
                         <Link to="/diff">Diff</Link>
@@ -29,7 +35,13 @@ export default class Navigation extends React.Component {
                         <Link to="/base64">Base64</Link>
                     </li>
                     <li>
-                        <Link to="/about">О нас</Link>
+                        <Link to="/about">
+                            <FormattedMessage
+                                id="app.navigation.link.about"
+                                defaultMessage="О нас"
+                                description="О нас"
+                            />
+                        </Link>
                     </li>
                 </ul>
             </nav>

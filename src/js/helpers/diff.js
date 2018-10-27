@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 export default class Diff extends React.Component {
     constructor(props) {
@@ -54,20 +55,42 @@ export default class Diff extends React.Component {
         return (
             <section className="diff">
                 <h4>
-                    Генирируем разницу в версиях поставки (для работы)
+                    <FormattedMessage
+                        id="app.diff.title"
+                        defaultMessage="Генирируем разницу в версиях поставки (для работы)"
+                        description="Заголовок - разница версий"
+                    />
                 </h4>
                 <div className="diff__container / row">
                     <div className="one-half column">
-                        <label>Вставь версии из Jira</label>
+                        <label>
+                            <FormattedMessage
+                                id="app.diff.value_1"
+                                defaultMessage="Вставь версии из Jira"
+                                description=""
+                            />
+                        </label>
                         <textarea className="diff__textarea" ref={this.myRef_1}/>
                     </div>
                     <div className="one-half column">
-                        <label>Результат</label>
+                        <label>
+                            <FormattedMessage
+                                id="app.diff.value_2"
+                                defaultMessage="Результат"
+                                description=""
+                            />
+                        </label>
                         <div className="diff__result" ref={this.myRef_2}/>
                     </div>
                 </div>
                 <div>
-                    <button onClick={this.parseData}>Показать различия версий</button>
+                    <button onClick={this.parseData}>
+                        <FormattedMessage
+                            id="app.diff.value_3"
+                            defaultMessage="Показать различия версий"
+                            description=""
+                        />
+                    </button>
                 </div>
             </section>
         )
