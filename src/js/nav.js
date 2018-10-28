@@ -35,20 +35,20 @@ export default class Navigation extends React.Component {
                         <Link to="/base64">Base64</Link>
                     </li>
                     <li>
-                        <Link to="/about">
-                            <FormattedMessage
-                                id="app.navigation.link.about"
-                                defaultMessage="О нас"
-                                description="О нас"
-                            />
-                        </Link>
-                    </li>
-                    <li>
                         <Link to="/random-inn">
                             <FormattedMessage
                                 id="app.navigation.link.random-inn"
                                 defaultMessage="Генератор ИНН..."
                                 description="Ссылка в меню - Генератор ИНН"
+                            />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/about">
+                            <FormattedMessage
+                                id="app.navigation.link.about"
+                                defaultMessage="О нас"
+                                description="О нас"
                             />
                         </Link>
                     </li>
