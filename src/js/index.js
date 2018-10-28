@@ -37,10 +37,16 @@ class App extends React.Component {
         if (this.state.appLang === 'ru') {
             this.setState({appLang: 'en'});
             Cookies.set('language', 'en', { expires: 30 });
+            document.getElementsByTagName('html')[0].lang = 'en';
         } else {
             this.setState({appLang: 'ru'});
             Cookies.set('language', 'ru', { expires: 30 });
+            document.getElementsByTagName('html')[0].lang = 'ru';
         }
+    }
+
+    componentDidMount = () => {
+        document.getElementsByTagName('html')[0].lang = language;
     }
 
     render () {
