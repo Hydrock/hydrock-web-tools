@@ -1,3 +1,8 @@
+<a name="1.5.0"></a>
+# [1.5.0](https://github.com/Hydrock/hydrock-web-tools/compare/v1.4.0...v1.5.0) (2018-10-28)
+
+
+
 <a name="1.4.0"></a>
 # 1.4.0 (2018-10-28)
 
