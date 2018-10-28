@@ -17,9 +17,10 @@ import * as messages_en from './i18n/en.json';
 import Home from './home.js';
 import About from './about.js';
 import Navigation from './nav.js';
-import Diff from './helpers/diff.js';
-import DecodeBase64 from './helpers/base64decode.js';
+import Diff from './pages/diff.js';
+import DecodeBase64 from './pages/base64decode.js';
 import LangSwitch from './components/lang-switch.js';
+import RandomInn from './pages/random-inn.js';
 
 const language = Cookies.get('language') || navigator.language.split(/[-_]/)[0];  // language without region code;
 
@@ -62,6 +63,7 @@ class App extends React.Component {
                             <Route exact path="/about" component={About} />
                             <Route exact path="/diff" component={Diff} />
                             <Route exact path="/base64" component={DecodeBase64} />
+                            <Route exact path="/random-inn" component={RandomInn} />
                         </div>
                     </div>
                 </HashRouter>

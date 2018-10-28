@@ -4,10 +4,15 @@
 	"app.diff.value_1": "Вставь версии из Jira",
 	"app.diff.value_2": "Результат",
 	"app.diff.value_3": "Показать различия версий",
+
 	"app.navigation.link.about": "О нас",
 	"app.navigation.link.main": "Главная",
+	"app.navigation.link.random-inn": "Генератор ИНН",
+
 	"app.page.base64.value_1": "Вставьте исходные данные (base64 строку для декодирования, или строку для кодирования в base64)",
 	"app.page.base64.value_2": "Иходная строка",
 	"app.page.base64.value_3": "Результат",
+	"app.page.random-inn.title": "ГЕНЕРАТОР ИНН, ОГРН, КПП, СНИЛС",
+
 	"app.title": "Этот ресур содержит несколько полезных инструментов для работы. {icon}"
 }

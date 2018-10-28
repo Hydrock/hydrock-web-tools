@@ -43,6 +43,15 @@ export default class Navigation extends React.Component {
                             />
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/random-inn">
+                            <FormattedMessage
+                                id="app.navigation.link.random-inn"
+                                defaultMessage="Генератор ИНН..."
+                                description="Ссылка в меню - Генератор ИНН"
+                            />
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         )
