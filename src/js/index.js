@@ -21,6 +21,7 @@ import Diff from './pages/diff.js';
 import DecodeBase64 from './pages/base64decode.js';
 import LangSwitch from './components/lang-switch.js';
 import RandomInn from './pages/random-inn.js';
+import CssTriangleGenerator from './pages/css-triangle-generator/css-triangle-generator.tsx';
 
 const language = Cookies.get('language') || navigator.language.split(/[-_]/)[0];  // language without region code;
 
@@ -64,6 +65,7 @@ class App extends React.Component {
                             <Route exact path="/diff" component={Diff} />
                             <Route exact path="/base64" component={DecodeBase64} />
                             <Route exact path="/random-inn" component={RandomInn} />
+                            <Route exact path='/css-triangle-cenerator' component={ CssTriangleGenerator } />
                         </div>
                     </div>
                 </HashRouter>

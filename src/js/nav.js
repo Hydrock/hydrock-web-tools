@@ -52,6 +52,15 @@ export default class Navigation extends React.Component {
                             />
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/css-triangle-cenerator">
+                            <FormattedMessage
+                                id="app.navigation.link.css-triangle-generator"
+                                defaultMessage="CSS Triangle Generator"
+                                description="CSS Triangle Generator"
+                            />
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         )

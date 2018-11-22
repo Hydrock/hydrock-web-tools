@@ -1,0 +1,16 @@
+.cssTriangleGenerator {
+    &__triangle-position {
+
+    }
+
+    &__corner {
+        width: 26px;
+        height: 26px;
+        background-color: darkcyan;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darkorange;
+        }
+    }
+}
