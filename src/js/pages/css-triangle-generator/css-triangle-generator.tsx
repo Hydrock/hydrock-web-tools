@@ -5,6 +5,10 @@ import './css-triangle-generator.scss';
 
 @cn('cssTriangleGenerator')
 class CssTriangleGenerator extends React.Component {
+    async sendRequest() {
+        return await fetch('https://baconipsum.com/api/?type=meat-and-filler')
+    }
+
     render(cn: any) {
         return (
             <section className={ cn() } >
@@ -30,6 +34,11 @@ class CssTriangleGenerator extends React.Component {
                     </div>
                     <div className="one-half column">
                         2
+                    </div>
+                    <div>
+                        <button onClick={ this.sendRequest }>
+                            sendRequest
+                        </button>
                     </div>
                 </div>
             </section>
