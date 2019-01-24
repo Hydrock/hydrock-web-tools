@@ -20,6 +20,7 @@ export default class Diff extends React.Component {
         
         let result = [];
         valueArr.forEach((item) => {
+            item = item.slice(2);
             let preResult = item.split(" ");
             result.push(preResult)
         });
