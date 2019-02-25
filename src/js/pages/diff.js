@@ -17,10 +17,12 @@ export default class Diff extends React.Component {
     parseData = () => {
         const nodeValue = this.myRef_1.current.value;
         let valueArr = nodeValue.split("\n");
+
+        console.log('valueArr', valueArr)
         
         let result = [];
         valueArr.forEach((item) => {
-            item = item.slice(2);
+            //item = item.slice(2);
             let preResult = item.split(" ");
             result.push(preResult)
         });
