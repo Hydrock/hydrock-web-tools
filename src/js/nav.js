@@ -44,6 +44,15 @@ export default class Navigation extends React.Component {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/generateSFAdataLink">
+                            <FormattedMessage
+                                id="app.navigation.link.sfa"
+                                defaultMessage="Заявка с SFA"
+                                description="Генерация заявок с SFA"
+                            />
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/about">
                             <FormattedMessage
                                 id="app.navigation.link.about"
@@ -52,7 +61,7 @@ export default class Navigation extends React.Component {
                             />
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/css-triangle-cenerator">
                             <FormattedMessage
                                 id="app.navigation.link.css-triangle-generator"
@@ -60,7 +69,7 @@ export default class Navigation extends React.Component {
                                 description="CSS Triangle Generator"
                             />
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         )
