@@ -7,11 +7,23 @@ export default class GenerateSFAdataLink extends React.Component {
             "SFADealIds": [
                 {
                     "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-31954",
-                    "productId": "rko"
+                    "productId": "LP_RKO"
                 },
                 {
                     "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-45632",
-                    "productId": "salaryProject"
+                    "productId": "LP_OOZP_GRP"
+                },
+                {
+                    "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-45633",
+                    "productId": "LP_AСQ_TR"
+                },
+                {
+                    "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-45634",
+                    "productId": "LP_AСQ_E"
+                },
+                {
+                    "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-45635",
+                    "productId": "LP_BANK2PART"
                 }
             ],
             "phone": "79202014589",
