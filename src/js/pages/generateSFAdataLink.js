@@ -97,7 +97,6 @@ export default class GenerateSFAdataLink extends React.Component {
     }
 
     setCustomText = (text) => {
-        console.log(text)
         this.setState({ defaultValue: text })
     }
 
