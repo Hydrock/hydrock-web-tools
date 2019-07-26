@@ -39,7 +39,7 @@ const rkoCreditForBusinessText = `{
             "productId": "LP_RKO"
         },
         {
-            "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-31954",
+            "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-31955",
             "productId": "LP_LOAN_SAS",
             "subProductId": "LP_LOAN_PRTN",
             "eqId": "XA06",
@@ -61,9 +61,8 @@ const rkoOverdraft = `{
             "productId": "LP_RKO"
         },
         {
-            "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-31954",
-            "productId": "LP_LOAN_SAS",
-            "subProductId": "LP_LOAN_PRTN",
+            "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-31955",
+            "subProductId": "LP_OVER_ADV",
             "eqId": "XA06",
         }
     ],
