@@ -42,7 +42,7 @@ const rkoCreditForBusinessText = `{
             "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-31955",
             "productId": "LP_LOAN_SAS",
             "subProductId": "LP_LOAN_PRTN",
-            "eqId": "XA06",
+            "eqId": "XA06"
         }
     ],
     "phone": "79202014589",
@@ -63,7 +63,7 @@ const rkoOverdraft = `{
         {
             "IdDealSFA": "ABR-FW-SCRMFW-WORK-OPPORTUNITY OP-31955",
             "subProductId": "LP_OVER_ADV",
-            "eqId": "XA06",
+            "eqId": "XA06"
         }
     ],
     "phone": "79202014589",
