@@ -53,6 +53,15 @@ export default class Navigation extends React.Component {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/sameSite">
+                            <FormattedMessage
+                                id="app.navigation.link.sameSite"
+                                defaultMessage="sameSite"
+                                description="sameSite"
+                            />
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/about">
                             <FormattedMessage
                                 id="app.navigation.link.about"

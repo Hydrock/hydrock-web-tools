@@ -6,6 +6,7 @@
 	"app.diff.value_3": "Show different versions",
 
 	"app.navigation.link.about": "About Us",
+	"app.navigation.link.sameSite": "sameSite",
 	"app.navigation.link.main": "Main",
 	"app.navigation.link.random-inn": "Genarate INN (rus)",
 

@@ -18,6 +18,7 @@ import Home from './home.js';
 import About from './about.js';
 import Navigation from './nav.js';
 import Diff from './pages/diff.js';
+import SameSite from './pages/same-site.js';
 import DecodeBase64 from './pages/base64decode.js';
 import LangSwitch from './components/lang-switch.js';
 import RandomInn from './pages/random-inn.js';
@@ -68,6 +69,7 @@ class App extends React.Component {
                             <Route exact path="/random-inn" component={RandomInn} />
                             <Route exact path='/css-triangle-cenerator' component={ CssTriangleGenerator } />
                             <Route exact path='/generateSFAdataLink' component={ GenerateSFAdataLink } />
+                            <Route exact path='/sameSite' component={ SameSite } />
                         </div>
                     </div>
                 </HashRouter>
