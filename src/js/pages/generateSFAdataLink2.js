@@ -188,6 +188,9 @@ export default class GenerateSFAdataLink extends React.Component {
                         value={ this.state.finishLink }
                         readOnly style={ { width: 800 } }
                     /><br/>
+                    <a href={ this.state.finishLink }>
+                        { this.state.finishLink }
+                    </a><br/>
                     <button type="button" onClick={ () => {
                         this.copyToClipboard('finishLink')
                     } }>
@@ -200,13 +203,16 @@ export default class GenerateSFAdataLink extends React.Component {
                     </span><br/>
                     <span>
                         const finishLinkForAlfaGo = baseUrlforAlfaGo + encodeURIComponent(finishLink);
-                    </span>
+                    </span><br/>
                     <input
                         type="text"
                         id="finishLinkForAlfaGo"
                         value={ this.state.finishLinkForAlfaGo }
                         readOnly style={ { width: 800 } }
                     /><br/>
+                    <a href={ this.state.finishLinkForAlfaGo }>
+                        { this.state.finishLinkForAlfaGo }
+                    </a>
                     <button type="button" onClick={ () => {
                         this.copyToClipboard('finishLinkForAlfaGo')
                     } }>
