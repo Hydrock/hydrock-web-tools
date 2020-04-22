@@ -53,6 +53,15 @@ export default class Navigation extends React.Component {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/generateSFAdataLink2">
+                            <FormattedMessage
+                                id="app.navigation.link.sfa2"
+                                defaultMessage="Заявка с SFA через AlfaGo"
+                                description="Генерация ссылки от SFA"
+                            />
+                        </Link>
+                    </li>
+                    {/* <li>
                         <Link to="/sameSite">
                             <FormattedMessage
                                 id="app.navigation.link.sameSite"
@@ -60,7 +69,7 @@ export default class Navigation extends React.Component {
                                 description="sameSite"
                             />
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="/about">
                             <FormattedMessage
