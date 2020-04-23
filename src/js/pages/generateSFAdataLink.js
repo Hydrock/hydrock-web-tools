@@ -86,7 +86,7 @@ export default class GenerateSFAdataLink extends React.Component {
     generateLink = (e) => {
         e.preventDefault();
         let objJsonB64 = Buffer.from(this.state.defaultValue).toString("base64");
-        let finalString = this.state.hostValue + '?userType=employee&&data=' + objJsonB64;
+        let finalString = this.state.hostValue + '?userType=employee&data=' + objJsonB64;
         this.setState({
             inputValue: finalString
         })

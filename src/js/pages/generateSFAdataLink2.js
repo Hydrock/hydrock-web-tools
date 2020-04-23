@@ -68,7 +68,7 @@ export default class GenerateSFAdataLink extends React.Component {
 
         let objJsonB64 = Buffer.from(data).toString("base64");
 
-        const finishLink = hostValue + `?userType=${userType}&&referrer=${referrer}&&token=${token}&&data=${objJsonB64}`;
+        const finishLink = hostValue + `?userType=${userType}&referrer=${referrer}&token=${token}&data=${objJsonB64}`;
         const finishLinkForAlfaGo = baseUrlforAlfaGo + encodeURIComponent(finishLink);
 
         this.setState({
@@ -180,7 +180,7 @@ export default class GenerateSFAdataLink extends React.Component {
                         Сненерированная ссылка для АО из SFA
                     </span><br/>
                     <span>
-                        "const finishLink = hostValue + '?userType=' + userType + '&&referrer=' + referrer + '&&token=' + token + '&& data=' + objJsonB64"
+                        "const finishLink = hostValue + '?userType=' + userType + '&referrer=' + referrer + '&token=' + token + '&data=' + objJsonB64"
                     </span>
                     <input
                         type="text"
