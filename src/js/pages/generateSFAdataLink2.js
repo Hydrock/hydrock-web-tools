@@ -222,6 +222,9 @@ export default class GenerateSFAdataLink extends React.Component {
                 <div>
                     <iframe src="https://testjmb.alfabank.ru/ona/?userType=employee" width="800" height="800"/>
                 </div>
+                <div>
+                    <iframe src="https://testjmb.alfabank.ru/ufr-start-board-ui" width="800" height="800"/>
+                </div>
             </section>
         )
     }
