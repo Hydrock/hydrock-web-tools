@@ -220,7 +220,7 @@ export default class GenerateSFAdataLink extends React.Component {
                     </button>
                 </div>
                 <div>
-                    <iframe src="https://testjmb.alfabank.ru/ona/" width="800" height="800"/>
+                    <iframe src="https://testjmb.alfabank.ru/ona/?userType=employee" width="800" height="800"/>
                 </div>
             </section>
         )
