@@ -219,6 +219,9 @@ export default class GenerateSFAdataLink extends React.Component {
                         Скопировать
                     </button>
                 </div>
+                <div>
+                    <iframe src="https://testjmb.alfabank.ru/ona/" width="800" height="800"/>
+                </div>
             </section>
         )
     }
