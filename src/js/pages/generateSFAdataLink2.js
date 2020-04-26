@@ -32,7 +32,7 @@ export default class GenerateSFAdataLink extends React.Component {
         data: payloadDataFromSfaJson,
         referrer: 'mobilesfa',
         userType: 'employee',
-        token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im9wZW5hY2NvdW50X29uYSIsImlhdCI6MTU4Nzc3MTA0MCwiZXhwIjoxNTg3ODU3NDQwfQ.PrqIX8KejbdD_DN79OBSA2ElOWBegDYyRX15emOdj6I'
+        token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im9wZW5hY2NvdW50X29uYSIsImlhdCI6MTU4Nzg4NzI0MiwiZXhwIjoxNTg3OTczNjQyfQ.CZU_wzcpFbFqt0Iw42-LuJbvvvRtAUaEQXIeBuZD6_I'
     }
 
     copyToClipboard(inputId) {
