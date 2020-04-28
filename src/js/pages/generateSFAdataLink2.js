@@ -106,6 +106,7 @@ export default class GenerateSFAdataLink extends React.Component {
                         value={ this.state.hostValue }
                         style={ { width: 800 } }
                         onChange={ (e) => {
+                            localStorage.setItem('hostValue', e.target.value);
                             this.setState({
                                 hostValue: e.target.value
                             })
