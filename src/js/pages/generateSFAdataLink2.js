@@ -2,14 +2,14 @@ import React from 'react';
 
 const payloadDataFromSfa = {
     "ogrn":"304560907600162",
-    // "SFADealIds":[
-    //    {
-    //       "pxObjClass":"ABR3-Int-UFR-AlfaOffice-NewTaskFrame-Data-SFADealIds",
-    //       "productId":"LP_RKO",
-    //       "idDealSFA":"OP-138468",
-    //       "pyStepPageReference":"AlfaOfficeNewTaskFrameData.SFADealIds(1)"
-    //    }
-    // ],
+    "SFADealIds":[
+       {
+          "pxObjClass":"ABR3-Int-UFR-AlfaOffice-NewTaskFrame-Data-SFADealIds",
+          "productId":"LP_RKO",
+          "idDealSFA":"OP-138468",
+          "pyStepPageReference":"AlfaOfficeNewTaskFrameData.SFADealIds(1)"
+       }
+    ],
     "RegionCode":"23",
     "inn":"560902143810",
     "AttractionChannel":"MB_FIELD_M",
@@ -27,21 +27,17 @@ export default class GenerateSFAdataLink extends React.Component {
         finishLink: '',
         finishLinkForAlfaGo: '',
         baseUrlforAlfaGo: 'mobilecrm://redirect/',
-        hostValue: 'https://testjmb.alfabank.ru/ona/orders/new/company-info',
-        // inputValue: '',
-        data: payloadDataFromSfaJson,
-        referrer: 'mobilesfa',
-        userType: 'employee',
-        token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Im9wZW5hY2NvdW50X29uYSIsImlhdCI6MTU4Nzg4NzI0MiwiZXhwIjoxNTg3OTczNjQyfQ.CZU_wzcpFbFqt0Iw42-LuJbvvvRtAUaEQXIeBuZD6_I'
+        hostValue: localStorage.getItem('hostValue') || 'https://testjmb.alfabank.ru/ona/orders/new/company-info',
+        data: localStorage.getItem('data') || payloadDataFromSfaJson,
+        referrer: localStorage.getItem('referrer')|| 'mobilesfa',
+        userType: localStorage.getItem('userType') || 'employee',
+        token: localStorage.getItem('userType') || 'tokenValue',
+        seamlessApp: localStorage.getItem('seamlessApp') || 'https://media.giphy.com/media/3o7aTskHEUdgCQAXde/giphy.gif',
     }
 
     copyToClipboard(inputId) {
         /* Get the text field */
         let copyText = document.getElementById(inputId);
-
-        console.log('inputId', inputId)
-
-        console.dir(copyText)
       
         /* Select the text field */
         copyText.select();
@@ -78,6 +74,7 @@ export default class GenerateSFAdataLink extends React.Component {
     }
 
     textareaOnChange = (e) => {
+        localStorage.setItem('data', e.target.value.trim());
         this.setState({ data: e.target.value.trim() });
     }
 
@@ -87,7 +84,6 @@ export default class GenerateSFAdataLink extends React.Component {
                 <h4>
                     Генерация ссылки с данными для АО из SFA через AlfaGo
                 </h4>
-                {/* new part */}
                 <div className="row">
                     <label>AlfaGO base url for redirect</label>
                     <input
@@ -124,6 +120,7 @@ export default class GenerateSFAdataLink extends React.Component {
                         value={ this.state.referrer }
                         style={ { width: 800 } }
                         onChange={ (e) => {
+                            localStorage.setItem('referrer', e.target.value);
                             this.setState({
                                 referrer: e.target.value
                             })
@@ -138,6 +135,7 @@ export default class GenerateSFAdataLink extends React.Component {
                         value={ this.state.userType }
                         style={ { width: 800 } }
                         onChange={ (e) => {
+                            localStorage.setItem('userType', e.target.value);
                             this.setState({
                                 userType: e.target.value
                             })
@@ -152,6 +150,7 @@ export default class GenerateSFAdataLink extends React.Component {
                         value={ this.state.token }
                         style={ { width: 800 } }
                         onChange={ (e) => {
+                            localStorage.setItem('token', e.target.value);
                             this.setState({
                                 token: e.target.value
                             })
@@ -166,8 +165,6 @@ export default class GenerateSFAdataLink extends React.Component {
                         onChange={ this.textareaOnChange }
                     />
                 </div>
-                {/* /new part */}
-                
                 <div className="row">
                     <button type="button" onClick={ this.generateLink }>
                         Сгенерировать ссылку
@@ -223,15 +220,31 @@ export default class GenerateSFAdataLink extends React.Component {
                     <iframe src="https://testjmb.alfabank.ru/ona/?userType=employee" width="800" height="800"/>
                 </div>
                 <div>
-                    <iframe src="https://testjmb.alfabank.ru/ufr-start-board-ui/" width="800" height="800"/>
+                    
                 </div>
+                <div className="row">
+                    <label>seamlessApp url</label>
+                    <input
+                        type="text"
+                        name="token"
+                        value={ this.state.seamlessApp }
+                        style={ { width: 800 } }
+                        onChange={ (e) => {
+                            localStorage.setItem('seamlessApp', e.target.value);
+                            this.setState({
+                                seamlessApp: e.target.value
+                            })
+                        } }
+                    />
+                </div>
+                <div>
+                    <iframe src={this.state.seamlessApp} width="800" height="800"/>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
             </section>
         )
     }
 }
-
-/*
-https%3A%2F%2Ftestjmb.alfabank.ru%2Fona%2Forders%2Fnew%2Fcompany-info%3F%26referrer%3Dmobilesfa%26data%3DeyJvZ3JuIjoiMzA0NTYwOTA3NjAwMTYyIiwiU0ZBRGVhbElkcyI6W3sicHhPYmpDbGFzcyI6IkFCUjMtSW50LVVGUi1BbGZhT2ZmaWNlLU5ld1Rhc2tGcmFtZS1EYXRhLVNGQURlYWxJZHMiLCJwcm9kdWN0SWQiOiJMUF9SS08iLCJpZERlYWxTRkEiOiJPUC0xMzg0NjgiLCJweVN0ZXBQYWdlUmVmZXJlbmNlIjoiQWxmYU9mZmljZU5ld1Rhc2tGcmFtZURhdGEuU0ZBRGVhbElkcygxKSJ9XSwiUmVnaW9uQ29kZSI6IjIzIiwiaW5uIjoiNTYwOTAyMTQzODEwIiwiQXR0cmFjdGlvbkNoYW5uZWwiOiJNQl9GSUVMRF9NIiwiQnJhbmNoSWQiOiJNT1RHIiwicHhPYmpDbGFzcyI6IkFCUjMtSW50LVVGUi1BbGZhT2ZmaWNlLU5ld1Rhc2tGcmFtZS1EYXRhIiwiQ2xpZW50TmFtZSI6ItCc0YPQttC40LrQvtCyINCe0LvQtdCzINCf0LXRgtGA0L7QstC40YcgKNCY0J8pIiwiQ2xpZW50TWFuYWdlciI6IlJVTTBOS1QiLCJQaW5FUSI6IlVBRDc2NiJ9%26userType%3Demployee%26token%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHRTeXNDb2RlIjoiU0ZBIiwidXNlcm5hbWUiOiJSVU0wTktUIiwiaWF0IjoxNTg3NTcyMjI1LCJleHAiOjE1ODc2NTg2MjV9.jsaunE8eK00pONN1Z-QYf6GYo3mC2KfXdwvfyl-jaos
-
-
-*/
