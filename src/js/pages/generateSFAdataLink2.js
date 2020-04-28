@@ -31,7 +31,7 @@ export default class GenerateSFAdataLink extends React.Component {
         data: localStorage.getItem('data') || payloadDataFromSfaJson,
         referrer: localStorage.getItem('referrer')|| 'mobilesfa',
         userType: localStorage.getItem('userType') || 'employee',
-        token: localStorage.getItem('userType') || 'tokenValue',
+        token: localStorage.getItem('token') || 'tokenValue',
         seamlessApp: localStorage.getItem('seamlessApp') || 'https://media.giphy.com/media/3o7aTskHEUdgCQAXde/giphy.gif',
     }
 
